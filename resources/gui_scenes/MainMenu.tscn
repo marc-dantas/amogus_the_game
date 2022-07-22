@@ -1,0 +1,104 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/Exit.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Credits.gd" type="Script" id=2]
+[ext_resource path="res://scripts/Start.gd" type="Script" id=3]
+[ext_resource path="res://resources/font/BRLNSR.TTF" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 63
+outline_size = 2
+outline_color = Color( 0.0604379, 0.0615234, 0.0597811, 1 )
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 46
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 119
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+extra_spacing_char = 6
+font_data = ExtResource( 4 )
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 192.0
+margin_top = 64.0
+margin_right = 832.0
+margin_bottom = 255.0
+custom_fonts/font = SubResource( 1 )
+text = "Amogus:
+THE GAME"
+align = 1
+valign = 1
+
+[node name="Buttons" type="Node" parent="."]
+
+[node name="Start" type="Button" parent="Buttons"]
+margin_left = 384.0
+margin_top = 312.0
+margin_right = 640.0
+margin_bottom = 376.0
+rect_pivot_offset = Vector2( 128, 32 )
+custom_fonts/font = SubResource( 2 )
+text = "Play"
+script = ExtResource( 3 )
+
+[node name="Exit" type="Button" parent="Buttons"]
+margin_left = 384.0
+margin_top = 456.0
+margin_right = 640.0
+margin_bottom = 520.0
+rect_pivot_offset = Vector2( 128, 32 )
+custom_fonts/font = SubResource( 2 )
+text = "Exit"
+script = ExtResource( 1 )
+
+[node name="Credits" type="Button" parent="Buttons"]
+margin_left = 384.0
+margin_top = 384.0
+margin_right = 640.0
+margin_bottom = 448.0
+rect_pivot_offset = Vector2( 128, 32 )
+custom_fonts/font = SubResource( 2 )
+text = "Credits"
+script = ExtResource( 2 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 208.0
+margin_right = 1333.0
+margin_bottom = 399.0
+rect_rotation = -30.0
+rect_scale = Vector2( 0.313583, 0.313583 )
+custom_fonts/font = SubResource( 3 )
+text = "My first game in Godot!"
+align = 1
+valign = 1
+
+[node name="Label3" type="Label" parent="."]
+margin_left = -8.0
+margin_top = 384.0
+margin_right = 1283.0
+margin_bottom = 575.0
+rect_scale = Vector2( 0.313583, 0.313583 )
+custom_fonts/font = SubResource( 3 )
+text = "click here plz -->"
+align = 1
+valign = 1
+
+[connection signal="button_down" from="Buttons/Start" to="Buttons/Start" method="_button_down"]
+[connection signal="button_down" from="Buttons/Exit" to="Buttons/Exit" method="_button_down"]
+[connection signal="button_down" from="Buttons/Credits" to="Buttons/Credits" method="_button_down"]

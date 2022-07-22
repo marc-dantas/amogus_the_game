@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/impostor.mp3-2d1a0177076c03561a0ad8883a23dcd7.mp3str"
+
+[deps]
+
+source_file="res://resources/audio/impostor.mp3"
+dest_files=[ "res://.import/impostor.mp3-2d1a0177076c03561a0ad8883a23dcd7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

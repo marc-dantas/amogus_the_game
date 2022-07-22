@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/amogus.mp3-4c255c7b784ac125d5d8dd7be92cabed.mp3str"
+
+[deps]
+
+source_file="res://resources/audio/amogus.mp3"
+dest_files=[ "res://.import/amogus.mp3-4c255c7b784ac125d5d8dd7be92cabed.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
